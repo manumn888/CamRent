@@ -59,7 +59,7 @@ public class CamController {
 		
 		session.removeAttribute("user");
 		session.setAttribute("logout", "true");
-		session.setAttribute("logout1", "true");
+		//session.setAttribute("logout1", "true");
 		ModelAndView modelAndView = homePage(null, session); //new ModelAndView("LoginPage");
 		return modelAndView;
 	}
@@ -69,11 +69,11 @@ public class CamController {
 		
 		ModelAndView modelAndView = new ModelAndView("HomePage");
 		
-		if (session.getAttribute("logout1") != null) {
-
-		} else {
-			session.setAttribute("user", "user");
-		}
+//		if (session.getAttribute("logout1") != null) {
+//
+//		} else {
+//			session.setAttribute("user", "user");
+//		}
 		
 		return modelAndView;
 	}
@@ -122,7 +122,7 @@ public class CamController {
 	@PostMapping("/saveRecord")
 	public ModelAndView saveRecord(@ModelAttribute("rentDetails") RentDetails rentDetails) {
 		
-		boolean result = false; // camService.save(rentDetails);
+		boolean result = camService.save(rentDetails);
 		ModelAndView modelAndView = new ModelAndView("HomePage");
 		
 		String message = "";

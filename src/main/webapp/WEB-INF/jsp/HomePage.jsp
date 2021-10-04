@@ -87,6 +87,15 @@ footer {
 		</nav>
 
 	</div>
+	
+	<div class="container" align="right">
+		<c:if test="${save == true }">
+			<div class="panel panel-info" align="left" style="width: 300px">
+				<div class="panel-heading">Message</div>
+				<div class="panel-body">${result}</div>
+			</div>
+		</c:if>
+	</div>
 
 	<div class="container" align="center">
 		<br>
@@ -124,14 +133,7 @@ footer {
 	<br>
 	<br>
 
-	<div class="container" align="right">
-		<c:if test="${save == true }">
-			<div class="panel panel-info" align="left" style="width: 300px">
-				<div class="panel-heading">Message</div>
-				<div class="panel-body">${result}</div>
-			</div>
-		</c:if>
-	</div>
+	
 
 	<footer id="sticky-footer"
 		class="flex-shrink-0 py-4 bg-dark text-white-50">

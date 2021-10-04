@@ -77,9 +77,46 @@ h3 {
 			</div>
 		</nav>
 
-		<br>
+		<br><br>
 
-		<div class="col-sm-4">
+		<div class="container" align="center">
+			<div class="row">
+				<div class="col-sm-3 p-3 ">
+					<div class="card bg-info  text-dark" align="left">
+						<div class="card-body">KempeGowda</div>
+						<div class="card">
+							<div class="card-body" style="color: black;">${amount[0]}  Rs</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 p-3 ">
+					<div class="card bg-success  text-dark" align="left">
+						<div class="card-body">Manu</div>
+						<div class="card">
+							<div class="card-body" style="color: black;">${amount[1]}  Rs</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 p-3 ">
+					<div class="card bg-danger  text-dark" align="left">
+						<div class="card-body">Manoj</div>
+						<div class="card">
+							<div class="card-body" style="color: black;">${amount[2]}  Rs</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 p-3 ">
+					<div class="card bg-warning  text-dark" align="left">
+						<div class="card-body">Naveen</div>
+						<div class="card">
+							<div class="card-body" style="color: black;">${amount[3]}  Rs</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<%-- <div class="col-sm-4">
 			<div class="card" style="width: 400px">
 				<img class="card-img-top"
 					src="https://wallpapercave.com/wp/wp2620011.jpg" alt="Card image"
@@ -126,7 +163,7 @@ h3 {
 					<p class="card-text">${amount[3]}  Rs</p>
 				</div>
 			</div>
-		</div>
+		</div> --%>
 
 		<br> <br> <br> <br>
 

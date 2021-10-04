@@ -49,6 +49,10 @@ body {
 h3 {
 	text-align: center;
 }
+.formAlign {
+	margin-left: auto;
+	margin-right: auto;
+}
 /*footer {
 	     	padding-top: 10px;
 	     	padding-bottom: 0px;
@@ -153,7 +157,7 @@ h3 {
 				<fieldset>
 					<!-- <legend>Donation Form</legend> -->
 					<!-- <div class="colums"> -->
-					<div style="width: 320px" align="center">
+					<div class="formAlign" align="center">
 						<div class="item">
 							<label for="fname"> Name<span>*</span></label> <input id="name"
 								type="text" name="name" />
